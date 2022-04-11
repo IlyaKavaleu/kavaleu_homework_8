@@ -31,7 +31,7 @@ class Authenticator:
         Проверяем наличие файла auth.txt рядом в той папке. Не принимаем аргументов, возвращает bool значение.
         True - файл авторизации существует. False - не существует.
         """
-        return os.path.exist("auth.txt")
+        return os.path.exists("auth.txt")
 
     def _read_auth_file(self) -> None:
         """
